@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inteligencia Artificial - Redes Neuronales</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,400,300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Inteligencia Artificial - Redes Neuronales</h1>
+    <div class="container">
+        <div class="row">
+            <div class="lol">
+                <div class="wrapper">
+                    <h2>Entrada de datos</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Entradas</legend>
+                            <div class="froup">
+                                <label for="entrada1">Entrada X1</label>
+                                <input type="number" name="entrada1">
+                            </div>
+                            <div class="froup">
+                                <label for="entrada2">Entrada X2</label>
+                                <input type="number" name="entrada2">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Valor deseado de salida</legend>
+                            <div class="froup">
+                                <label for="valor_deseado">Valor</label>
+                                <input type="number" name="valor_deseado">
+                            </div>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Pesos Unidades Sigmoidales</legend>
+                            <div class="froup">
+                                <label for="peso1">Unidad 1</label>
+                                <input type="number" name="peso1">
+                            </div>
+                            <div class="froup">
+                                <label for="peso2">Unidad 2</label>
+                                <input type="number" name="peso2">
+                            </div>
+                            <div class="froup">
+                                <label for="peso3">Unidad 3</label>
+                                <input type="number" name="peso3">
+                            </div>
+                        </fieldset>
+                        <input type="submit" value="Calcular" id="calcular">
+                    </form>  
+                </div>
+            </div>
+            <div class="lol">
+                <div class="wrapper">
+                    <h2>Salida de datos</h2>
+                    <dl>
+                        <dt>Unidades Sigmoidales</dt>
+                        <dd>
+                            <ul>
+                                <li>Unidad 1<span id="unidad1"></span></li>
+                                <li>Unidad 2<span id="unidad2"></span></li>
+                                <li>Unidad 3<span id="unidad3"></span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Deltas</dt>
+                        <dd>
+                            <ul>
+                                <li>Unidad 1<span id="deltaunidad1"></span></li>
+                                <li>Unidad 2<span id="deltaunidad2"></span></li>
+                                <li>Unidad 3<span id="deltaunidad3"></span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>Pesos ajustados</dt>
+                        <dd>
+                            <ul>
+                                <li>Unidad 1<span id="pesounidad1"></span></li>
+                                <li>Unidad 2<span id="pesounidad2"></span></li>
+                                <li>Unidad 3<span id="pesounidad3"></span></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="neurona.js"></script>
+</body>
+</html>
