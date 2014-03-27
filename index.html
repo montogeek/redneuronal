@@ -9,6 +9,9 @@
 </head>
 <body>
     <h1>Inteligencia Artificial - Redes Neuronales</h1>
+    <figure class="hero-image">
+        <img src="ULU.png" alt="Red Neuronal">
+    </figure>
     <div class="container">
         <div class="row">
             <div class="lol">
@@ -27,29 +30,29 @@
                             </div>
                         </fieldset>
                         <fieldset>
+                            <legend>Pesos Unidades Sigmoidales</legend>
+                            <div class="froup">
+                                <label for="peso1">Peso X1</label>
+                                <input type="number" name="peso" value="2">
+                            </div>
+                            <div class="froup">
+                                <label for="peso2">Peso X2</label>
+                                <input type="number" name="peso" value="-2">
+                            </div>
+                            <div class="froup">
+                                <label for="peso3">Peso 1, X3</label>
+                                <input type="number" name="peso" value="3">
+                            </div>
+                            <div class="froup">
+                                <label for="peso4">Peso 2, X3</label>
+                                <input type="number" name="peso" value="-2">
+                            </div>
+                        </fieldset>
+                        <fieldset>
                             <legend>Valor deseado de salida</legend>
                             <div class="froup">
                                 <label for="valor_deseado">Valor</label>
                                 <input type="number" name="valor_deseado" value="0">
-                            </div>
-                        </fieldset>
-                        <fieldset>
-                            <legend>Pesos Unidades Sigmoidales</legend>
-                            <div class="froup">
-                                <label for="peso1">Peso (X1, Unidad1)</label>
-                                <input type="number" name="peso" value="2">
-                            </div>
-                            <div class="froup">
-                                <label for="peso2">Peso (X2, Unidad1)</label>
-                                <input type="number" name="peso" value="-2">
-                            </div>
-                            <div class="froup">
-                                <label for="peso3">Peso (X1, Unidad3)</label>
-                                <input type="number" name="peso" value="3">
-                            </div>
-                            <div class="froup">
-                                <label for="peso4">Peso (X2, Unidad3)</label>
-                                <input type="number" name="peso" value="-2">
                             </div>
                         </fieldset>
                         <input type="submit" value="Calcular" id="calcular">
@@ -83,10 +86,10 @@
                         <dt>Pesos ajustados</dt>
                         <dd>
                             <ul>
-                                <li>Peso 1: <span id="peso1"></span></li>
-                                <li>Peso 2: <span id="peso2"></span></li>
-                                <li>Peso 3: <span id="peso3"></span></li>
-                                <li>Peso 4: <span id="peso4"></span></li>
+                                <li>Peso X1: <span id="peso1"></span></li>
+                                <li>Peso X2: <span id="peso2"></span></li>
+                                <li>Peso 1, X3: <span id="peso3"></span></li>
+                                <li>Peso 2, X3: <span id="peso4"></span></li>
                             </ul>
                         </dd>
                     </dl>
