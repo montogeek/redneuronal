@@ -33,9 +33,9 @@ function deltaJ(deltak, peso, fj) {
     return (1 - fj) * deltak * peso * fj;
 }
 
-function pesoK(valor, deltak, x) {
+function pesoK(valor, delta, x) {
     'use strict';
-    return valor + (deltak *  x);
+    return valor + (delta *  x);
 }
 
 function neurona(event) {
@@ -95,9 +95,10 @@ function neurona(event) {
     );
 
     // Cálculo de nuevos pesos
-    pesok = peso.map(function(value) {
-        return pesoK(value, deltak, c);
-    });
+    pesok[0] = pesoK( peso[0], deltaj[0], entrada[0]);
+    pesok[1] = pesoK( peso[1], deltaj[1], entrada[1]);
+    pesok[2] = pesoK( peso[2], deltak, f_temp[0]);
+    pesok[3] = pesoK( peso[3], deltak, f_temp[1]);
 
     // Output
     // -----------------
@@ -117,7 +118,7 @@ function neurona(event) {
     document.getElementById('peso2').innerHTML = numFilter(pesok[1]);
     document.getElementById('peso3').innerHTML = numFilter(pesok[2]);
     document.getElementById('peso4').innerHTML = numFilter(pesok[3]);
-
+    // debugger;
 
     // Fancy output
     fadeIn(document.getElementById('output'));
